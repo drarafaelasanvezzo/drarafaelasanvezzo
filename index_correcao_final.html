@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dra. Rafaela Sanvezzo — Cirurgiã-Dentista</title>
+  <meta name="description" content="Odontologia moderna e humanizada em Presidente Prudente/SP. Endodontia, Periodontia, Clareamento, Resina, DTM, Cirurgias, Botox e Harmonização Orofacial.">
+</head>
+<body>
+  <h1>Teste Foto — versão robusta</h1>
+  <p>Se a foto abaixo aparecer, tudo está funcionando.</p>
+
+  <img id="foto" src="perfil.jpg" alt="Foto da Dra. Rafaela"
+    style="max-width:300px;border-radius:14px"
+    onerror="this.onerror=null;
+      const alts=[
+        '/perfil.jpg',
+        'public/perfil.jpg',
+        '/public/perfil.jpg',
+        'perfil.jpeg',
+        '/perfil.jpeg',
+        'public/perfil.jpeg'
+      ];
+      (function t(i){
+        if(i>=alts.length) return;
+        const test=new Image();
+        test.onload=()=>{document.getElementById('foto').src=alts[i]};
+        test.onerror =()=> t(i+1);
+        test.src=alts[i];
+      })(0);">
+
+  <p>Link direto: <a href="perfil.jpg">perfil.jpg</a></p>
+
+</body>
+</html>
