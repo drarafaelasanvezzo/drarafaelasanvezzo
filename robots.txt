@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://drarafaelasanvezzo.com.br/sitemap.xml
